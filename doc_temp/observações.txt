@@ -1,0 +1,87 @@
+----------------------------------------------------------------
+|                      OBSERVAÇÕES                             |
+================================================================
+layout
+
+Frontend (Comprado)
+http://themeforest.net/item/real-homes-html-template/6057358?WT.ac=solid_search_item&WT.seg_1=solid_search_item&WT.z_author=960development
+
+backend (Comprar só após fazer as modificações no frontend)
+https://wrapbootstrap.com/theme/ace-responsive-admin-template-WB0B30DGR
+
+PACOTES PARA VENDA:
+
+ -Gratuita por 1 anos (R$ 10,00)
+	=> Sem o painel de informações
+	=> 10 anuncios ativos
+	=> Cada anuncio com até 3 imagens
+	=> Cadastro de 5 usuários
+	
+ -Gratuita por 3 meses
+ 	=> Versão completa
+
+ -Basica (R$ 20,00 / Mês)
+	=> Painel de informações
+	=> 30 anuncios ativos
+	=> 2 anuncios em destaque ativo por 1 dia por mês
+	=> Cada anuncio com até 8 imagens	
+	=> Cadastro de 10 usuários
+
+ -Completa (R$ 35,00 / Mês)
+	=> Painel de informações
+	=> Anuncios ilimitados
+	=> 5 anuncios em destaque ativos por um dia em cada mês
+	=> 2 anuncio no banner principal por mês com validade de 1 dia sendo um por vez
+	=> Cada anuncio com imagens ilimitadas
+	=> Usuarios ilimitados
+	=> Captação de imoveis
+	=> Visualização dos imoveis solicitados
+
+ -Pacotes de publicação no banner principal
+ 	- pacote  5 publicações R$ 50,00 validade de um dia  - somente uma imagem
+	- pacote 10 publicações R$ 90,00 validade de um dia  - somente três imagens
+	- pacote 30 publicações R$ 250,00 validade de um dia - somente dez imagens
+
+----------------------------------------------------------------
+
+PROMOÇÃO
+	=> Versão Completa R$ 40,00 por 2 meses
+	=> Versão Basica R$ 25,00 por 2 mese
+	
+	- pacote  5 publicações R$ 40,00 validade de um dia  - somente uma imagem
+	- pacote 10 publicações R$ 72,00 validade de um dia  - somente três imagens
+	- pacote 30 publicações R$ 200,00 validade de um dia - somente dez imagens
+
+----------------------------------------------------------------
+
+Modulos atuais
+	=> Portal publico;
+	=> Administração:
+		=> Gerenciamento de anúncios:
+			=> Cadastro de imoveis;
+			=> Clientes;
+			=> Colaboradores;
+			=> Gerenciamento de usuários.
+
+Modulos Futuros
+	=> Contratos (Locação, compra e venda)
+	=> Vistoria do imovel (entrega/recebimento)
+	=> Controle de comissão dos corretores
+	=> Contas a pagar e receber
+	=> Geração de boletos
+	=> Mala direta
+	=> Relatórios gerenciais
+	=> Honorários (imobiliaria)
+	=> Comissão (corretor)
+        => Ambiente de vendas para o corretor
+        => Area do cliente quando tem contrato de aluguem (extrato, emissão do boleto, solicitações)
+        => Construtoras afiliadas (mostrar evolução das obras)
+
+---------------------------------------------------------------
+
+ESTRATEGIAS DE MARKETING
+  => REDES SOCIAIS
+  => Fazer umas chamdas no todo natalense
+  => BACK BUS (propaganda nos onibus (de inicio tentar fazer uma em natal e joao pessoa))
+  => Radio
+        

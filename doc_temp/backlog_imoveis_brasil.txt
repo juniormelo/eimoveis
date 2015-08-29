@@ -1,0 +1,62 @@
+﻿
+
+backlog Portal imobiliario
+
+
+
+frontend
+
+=> Cadastro da newsletter
+=> Criar a pagina de parceiros (quando uma imobiliaria se credenciar exibir a logo da mesma nessa pagina)
+
+=> deixar o layout fixo
+
+=> rever a logomarca
+
+=> colocar um espaço para um banner em cima
+
+=> ver a possibilidade de reduzir espaço no topo
+
+=> integrar o plugin do face
+
+=> integrar o puglin do twitter (?)
+
+=> Pagina informações do anuncio melhorar o layout da tabela de informações
+=> preparar a pagina não encontrei o meu imovel (irá direto para a solicitação de imoveis no painel adm)
+
+=> ambiente para anuncio gratis irá direto para a capitação de imoveis
+
+
+
+
+
+
+backend
+
+=> cadastro de imovel
+ (criar uma trigger para gerar o código automático)
+ - ok
+=> cadastro de anuncio: (Inserir a data de inicio e fim)
+   
+=> gerenciamento da capitação de imoveis ( os anuncios gratis feito pelo internalta irá diretamente para as imobiliarias)
+
+=> gerenciamento da solicitação de imoveis (caso o internalta nao encontre o imovel pode fazer um cadastro com as caracteristica que o mesmo procura)
+
+=> No cadastro de imoveis colocar uma aba vistorias
+=> Rever o status do imovel (Disponivel, Alugado, Vendido, Anunciado(V - vender), Anunciado(A - alugar), Inativado)
+=> Status do anuncio (Publicado (quando o usuario publica), Expirado (quando passar do prazo), Cancelado (usuario disite), Inativado(retira o anuncio do portal, para disponibilizar novamente o usuario deve alterar para publicado, mas caso tenha passado do prazo o sistema deve criticar e mudar para expirado))
+=> As visitas dever ser logadas diariamente em uma tabela, e armazenar no cadastro do imovel o total e ultima visita
+=> Criar um sistema de log para auditar o sistema, rotina será composta de duas tabelas uma armazenará o log temporario e a outra o log geral, criar uma procedure para ao final de cada dia jogar as informações do log temporario para o log definitivo, como o sistema terá apenas um banco isso ajudará na performance pois a latencia da log temp vai ser menor pois sempre terá menos registros
+=> Desenvolver o anuncio no cadastro doo imovel
+
+
+
+
+Referencias:
+http://www.expoimovel.com/
+http://www.i-value.com.br/corretor-de-imoveis/software-para-corretor/
+
+modelo para o contrato
+https://www.youtube.com/watch?v=gnzLlEX9Vnc
+
+http://www.basesoft.com.br/base-locacao/

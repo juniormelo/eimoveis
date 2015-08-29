@@ -1,0 +1,31 @@
+
+backlog Portal imobiliario
+
+frontend
+=> deixar o layout fixo
+=> rever a logomarca
+=> colocar um espaço para um banner em cima
+=> ver a possibilidade de ganhar mais espaço no topo
+=> integrar o plugin do face
+=> integrar o puglin do twitter (?)
+=> aplicar os filtros na localização dos imoveis (ja está direcionando para a pagina de pesquisa só falta aplicar os filtros)
+=> desenvolver a pagina informações do anuncio (colocar a galeria, informações do anuncio, registrar visita do anuncio,e o mapa) (segunda - 16/04/2013 a 18/04/2013)
+=> preparar a pagina não encontrei o meu imovel (irá direto para a solicitação de imoveis no painel adm)
+=> ambiente para anuncio gratis irá direto para a capitação de imoveis
+
+
+backend
+
+=> na pagina inicial formatar a tabela do painel administrativo (deixar ela mais pequena alinhada a direita e ver se é possivel colocar icones com as principais funcionalidades)
+=> colocar a logo acima
+=> cadastro de imovel
+    => verificar o charset das caracteristicas cadastradas
+    => quando tiver imagem cadastrada exibir, com o campo ordem, descrição e o campo excluir em seguida as opções para inserir novas imagens
+=> cadastro de anuncio
+    => na descrição colocar um plugin wysiwyg
+=> gerenciamento da capitação de imoveis ( os anuncios gratis feito pelo internalta irá diretamente para as imobiliarias)
+=> gerenciamento da solicitação de imoveis (caso o internalta nao encontre o imovel pode fazer um cadastro com as caracteristica que o mesmo procura)
+
+
+
+

@@ -1,0 +1,43 @@
+#MODULO DE CONTRATO
+Localização da pasta fisica onde será armazenado o contrato
+Tipo (Locação, compra ou venda)
+Situação (Andamento, Fechado, Finalizado, Distratado, Cancelado, Cecionado)
+Cessao (SIM/NÃO)
+Imovel
+Contratantes
+Avalistas
+Contratada
+Testemunhas
+Indice de correção
+Periodicidade da correção (mensal ou anual)
+Data assinatura
+Data inicio
+Data Fim
+IPTU
+Condominio
+Forma de pagamento
+Data da primeira parcela
+Renova(SIM/NAO) - gerar as mesmas parcelas e logar as renovações
+vencimento
+Valor do contrato
+multa
+juros
+Honorários (comissão da imobiliaria e do corretor)
+**Parcelas do contrato (parcela, Valor nominal, valor corrigido, juros, multas, desconto, situação da parcela)
+**Historico
+
+Analisar o comportamento dos aditivos
+
+
+-Tela de consulta
+Colunas (Contrato|Tipo|Imovel|Contratante|Valor|Situação)
+
+-Cadastro
+Abas (Informações|Partes|Testemunhas|Honorarios|Financeiro)
+
+Ver a rotina de distrato
+Ver a rotina de cessão de direitos
+
+
+analisar
+https://www.youtube.com/watch?v=6hcdwzr_8fI&list=PLlG_EozXgeWFxQb5jKczM7CMLDwaabKpi

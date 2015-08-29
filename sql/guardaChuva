@@ -1,0 +1,105 @@
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
+
+CREATE SCHEMA IF NOT EXISTS `guardaChuva` DEFAULT CHARACTER SET utf8 ;
+
+-- -----------------------------------------------------
+-- Table `guardaChuva`.`pessoa`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `guardaChuva`.`pessoa` (
+  `idPessoa` INT NOT NULL AUTO_INCREMENT ,
+  `nome` VARCHAR(255) NULL ,
+  `email` VARCHAR(255) NULL ,
+  PRIMARY KEY (`idPessoa`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `guardaChuva`.`UF`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `guardaChuva`.`UF` (
+  `idUF` INT NOT NULL AUTO_INCREMENT ,
+  `UF` CHAR(2) NOT NULL ,
+  PRIMARY KEY (`idUF`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `guardaChuva`.`pessoafisica`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `guardaChuva`.`pessoafisica` (
+  `pessoa_idPessoa` INT NOT NULL ,
+  `cpf` VARCHAR(11) NULL ,
+  `rg` VARCHAR(255) NOT NULL ,
+  `dataEmissaoRG` DATE NULL ,
+  `orgaoExpedidorRG` VARCHAR(255) NULL ,
+  `UF_idUF` INT NOT NULL ,
+  `sexo` CHAR(1) NULL ,
+  `dataNascimento` DATE NULL ,
+  `naturalidade` VARCHAR(255) NULL ,
+  `nacionalidade` VARCHAR(255) NULL ,
+  INDEX `fk_pessoafisica_pessoa` (`pessoa_idPessoa` ASC) ,
+  PRIMARY KEY (`pessoa_idPessoa`) ,
+  INDEX `fk_pessoafisica_UF1` (`UF_idUF` ASC) ,
+  CONSTRAINT `fk_pessoafisica_pessoa`
+    FOREIGN KEY (`pessoa_idPessoa` )
+    REFERENCES `guardaChuva`.`pessoa` (`idPessoa` )
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT,
+  CONSTRAINT `fk_pessoafisica_UF1`
+    FOREIGN KEY (`UF_idUF` )
+    REFERENCES `guardaChuva`.`UF` (`idUF` )
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `guardaChuva`.`pessoajuridica`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `guardaChuva`.`pessoajuridica` (
+  `pessoa_idPessoa` INT NOT NULL ,
+  `cnpj` VARCHAR(20) NULL ,
+  `optanteSimples` TINYINT(1)  NULL ,
+  INDEX `fk_pessoajuridica_pessoa1` (`pessoa_idPessoa` ASC) ,
+  PRIMARY KEY (`pessoa_idPessoa`) ,
+  UNIQUE INDEX `cnpj_UNIQUE` (`cnpj` ASC) ,
+  CONSTRAINT `fk_pessoajuridica_pessoa1`
+    FOREIGN KEY (`pessoa_idPessoa` )
+    REFERENCES `guardaChuva`.`pessoa` (`idPessoa` )
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `guardaChuva`.`funcionario`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `guardaChuva`.`funcionario` (
+  `pessoafisica_pessoa_idPessoa` INT NOT NULL ,
+  `dataAdmissao` DATE NOT NULL ,
+  `dataDesligamento` DATE NULL ,
+  `matricula` VARCHAR(60) NULL ,
+  `cargo` VARCHAR(255) NULL ,
+  `pessoajuridica_pessoa_idPessoa` INT NOT NULL ,
+  INDEX `fk_funcionario_pessoafisica1` (`pessoafisica_pessoa_idPessoa` ASC) ,
+  PRIMARY KEY (`pessoafisica_pessoa_idPessoa`) ,
+  INDEX `fk_funcionario_pessoajuridica1` (`pessoajuridica_pessoa_idPessoa` ASC) ,
+  CONSTRAINT `fk_funcionario_pessoafisica1`
+    FOREIGN KEY (`pessoafisica_pessoa_idPessoa` )
+    REFERENCES `guardaChuva`.`pessoafisica` (`pessoa_idPessoa` )
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT,
+  CONSTRAINT `fk_funcionario_pessoajuridica1`
+    FOREIGN KEY (`pessoajuridica_pessoa_idPessoa` )
+    REFERENCES `guardaChuva`.`pessoajuridica` (`pessoa_idPessoa` )
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT)
+ENGINE = InnoDB;
+
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
