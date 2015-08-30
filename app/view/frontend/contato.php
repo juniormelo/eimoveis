@@ -4,7 +4,7 @@
             <div class="span9 main-wrap">
                 <!-- Main Content -->
                 <div class="main">
-                    <div class="inner-wrapper">
+                    <div class="inner-wrapper" style="min-height: 673px">
                         <article id="post-122" class="post-122 page type-page status-publish hentry clearfix">
                         </article>
                         
@@ -27,35 +27,46 @@
                         <section id="contact-form">
                             <!--<h3 class="form-heading">Entre em contato conosco</h3>-->
                             <form  action="javascript:void(0);" id="formContato">
-                                                               
-                                <p>
-                                    <label for="nome"><strong>Nome:</strong></label>
-                                    <input type="text" id="nome" name="nome" class="" placeholder="Por favor, informe seu nome">
-                                </p>
+                                <div class="row">                               
+                                    <div class="span4 main-wrap">
+                                        <p>
+                                            <label for="nome"><strong>Nome:</strong></label>
+                                            <input type="text" id="nome" name="nome" style="width: 90%" class="" placeholder="Por favor, informe seu nome">
+                                        </p>
+                                    </div>
+                                    <div  class="span4 main-wrap">
+                                        <p>
+                                            <label for="telefone"><strong>Telefone:</strong></label>
+                                            <input type="text" id="telefone" name="telefone" style="width: 90%" class="telefone" placeholder="Por favor, informe seu telefone">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">  
+                                    <div class="span4 main-wrap">
+                                        <p>
+                                            <label for="email"><strong>E-mail:</strong></label>
+                                            <input type="text" id="email" name="email" style="width: 90%" class="email " placeholder="Por favor, informe um endereço de email válido">
+                                        </p>
+                                    </div>
+                                    <div class="span4 main-wrap">
+                                        <p>
+                                            <label for="assunto"><strong>Assunto:</strong></label>
+                                            <input type="text" name="assunto" style="width: 90%" id="assunto" class="" placeholder="Por favor, informe o assunto">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">  
+                                    <div class="span8">
+                                        <p>
+                                            <label for="comment"><strong>Mensagem:</strong></label>                                    
+                                            <textarea name="mensagem" style="width: 95%;min-height: 200px" id="comment" class="" rows="12" cols="25" placeholder="Por favor, informe a sua mensagem"></textarea>
+                                        </p>
+                                    </div>
+                                </div>
                                 
-                                <p>
-                                    <label for="telefone"><strong>Telefone:</strong></label>
-                                    <input type="text" id="telefone" name="telefone" class="telefone" placeholder="Por favor, informe seu telefone">
-                                </p>
-
-                                <p>
-                                    <label for="email"><strong>E-mail:</strong></label>
-                                    <input type="text" id="email" name="email" class="email " placeholder="Por favor, informe um endereço de email válido">
-                                </p>
-
-                                <p>
-                                    <label for="assunto"><strong>Assunto:</strong></label>
-                                    <input type="text" name="assunto" id="assunto" class="" placeholder="Por favor, informe o assunto">
-                                </p>
-
-                                <p>
-                                    <label for="comment"><strong>Mensagem:</strong></label>                                    
-                                    <textarea name="mensagem" id="comment" class="" rows="10" cols="15" placeholder="Por favor, informe a sua mensagem"></textarea>
-                                </p>
-                                
-                                <p>
+                                <div>
                                     <span><a id="btnEnviaMsgContato" class="btn-blue btn"><strong>Enviar mensagem</strong></a></span>                                    
-                                </p>
+                                </div>
                                 
                             </form>
                         </section>
